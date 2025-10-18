@@ -48,7 +48,7 @@ export const PropertyCard: React.FC<PropertyCardProps> = ({
         </div>
         <div className="absolute top-3 right-3 flex space-x-2">
           {property.isNFT && (
-            <span className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-2 py-1 rounded-full text-xs font-medium">
+            <span className="bg-linear-to-r from-purple-500 to-pink-500 text-white px-2 py-1 rounded-full text-xs font-medium">
               NFT
             </span>
           )}

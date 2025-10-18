@@ -18,10 +18,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onConnectWallet, walletConnected
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2 group">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-emerald-500 rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-200">
+              <div className="w-8 h-8 bg-linear-to-br from-blue-600 to-emerald-500 rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform duration-200">
                 <Home className="w-5 h-5 text-white" />
               </div>
-              <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-emerald-500 bg-clip-text text-transparent">
+              <span className="text-xl font-bold bg-linear-to-r from-blue-600 to-emerald-500 bg-clip-text text-transparent">
                 PropChain
               </span>
             </Link>
@@ -76,7 +76,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onConnectWallet, walletConnected
               className={`flex items-center space-x-2 px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
                 walletConnected
                   ? 'bg-emerald-100 text-emerald-700 hover:bg-emerald-200'
-                  : 'bg-gradient-to-r from-blue-600 to-emerald-500 text-white hover:from-blue-700 hover:to-emerald-600 shadow-lg hover:shadow-xl transform hover:scale-105'
+                  : 'bg-linear-to-r from-blue-600 to-emerald-500 text-white hover:from-blue-700 hover:to-emerald-600 shadow-lg hover:shadow-xl transform hover:scale-105'
               }`}
             >
               <Wallet className="w-4 h-4" />

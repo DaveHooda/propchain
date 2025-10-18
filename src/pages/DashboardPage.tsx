@@ -12,13 +12,13 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
   onConnectWallet 
 }) => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-purple-50/30 to-blue-50/30 relative overflow-hidden">
+    <div className="min-h-screen bg-linear-to-br from-indigo-50 via-purple-50/30 to-blue-50/30 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_20%,rgba(99,102,241,0.05),transparent_60%)]"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_60%_80%,rgba(139,92,246,0.05),transparent_60%)]"></div>
       <div className="absolute top-0 left-0 w-full h-full bg-[linear-gradient(135deg,transparent_0%,rgba(59,130,246,0.02)_50%,transparent_100%)]"></div>
-      <div className="absolute top-10 right-10 w-72 h-72 bg-gradient-to-bl from-indigo-200/20 to-transparent rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-10 left-10 w-96 h-96 bg-gradient-to-tr from-purple-200/20 to-transparent rounded-full blur-3xl animate-pulse delay-1000"></div>
+      <div className="absolute top-10 right-10 w-72 h-72 bg-linear-to-bl from-indigo-200/20 to-transparent rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-10 left-10 w-96 h-96 bg-linear-to-tr from-purple-200/20 to-transparent rounded-full blur-3xl animate-pulse delay-1000"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Header */}
@@ -161,7 +161,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({
                     <p className="text-gray-600 mb-4">Connect your wallet to access NFT properties and blockchain features.</p>
                     <button
                       onClick={onConnectWallet}
-                      className="w-full bg-gradient-to-r from-blue-600 to-emerald-500 hover:from-blue-700 hover:to-emerald-600 text-white py-3 px-4 rounded-lg font-semibold transition-all duration-300"
+                      className="w-full bg-linear-to-r from-blue-600 to-emerald-500 hover:from-blue-700 hover:to-emerald-600 text-white py-3 px-4 rounded-lg font-semibold transition-all duration-300"
                     >
                       Connect Wallet
                     </button>

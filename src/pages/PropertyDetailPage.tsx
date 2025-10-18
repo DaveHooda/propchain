@@ -49,11 +49,11 @@ export const PropertyDetailPage: React.FC<PropertyDetailPageProps> = ({ onToggle
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/30 to-indigo-50/30 relative overflow-hidden">
+    <div className="min-h-screen bg-linear-to-br from-slate-50 via-blue-50/30 to-indigo-50/30 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(59,130,246,0.04),transparent_60%)]"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_20%,rgba(139,92,246,0.04),transparent_60%)]"></div>
-      <div className="absolute top-0 left-0 w-full h-64 bg-gradient-to-b from-white/50 to-transparent"></div>
+      <div className="absolute top-0 left-0 w-full h-64 bg-linear-to-b from-white/50 to-transparent"></div>
       
       {/* Header */}
       <div className="bg-white/80 backdrop-blur-sm border-b border-gray-200/50 relative z-10">
@@ -97,7 +97,7 @@ export const PropertyDetailPage: React.FC<PropertyDetailPageProps> = ({ onToggle
                 </div>
                 <div className="absolute top-4 right-4 flex space-x-2">
                   {property.isNFT && (
-                    <span className="bg-gradient-to-r from-purple-500 to-pink-500 text-white px-3 py-1 rounded-full text-sm font-medium">
+                    <span className="bg-linear-to-r from-purple-500 to-pink-500 text-white px-3 py-1 rounded-full text-sm font-medium">
                       NFT Property
                     </span>
                   )}
@@ -124,7 +124,7 @@ export const PropertyDetailPage: React.FC<PropertyDetailPageProps> = ({ onToggle
                     <button
                       key={index}
                       onClick={() => setCurrentImageIndex(index)}
-                      className={`flex-shrink-0 w-20 h-16 rounded-lg overflow-hidden border-2 transition-all ${
+                      className={`shrink-0 w-20 h-16 rounded-lg overflow-hidden border-2 transition-all ${
                         currentImageIndex === index 
                           ? 'border-blue-500 shadow-md' 
                           : 'border-gray-200 hover:border-gray-300'
@@ -203,7 +203,7 @@ export const PropertyDetailPage: React.FC<PropertyDetailPageProps> = ({ onToggle
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                   {property.features.map((feature, index) => (
                     <div key={index} className="flex items-center space-x-2 text-gray-700">
-                      <CheckCircle className="w-4 h-4 text-emerald-500 flex-shrink-0" />
+                      <CheckCircle className="w-4 h-4 text-emerald-500 shrink-0" />
                       <span>{feature}</span>
                     </div>
                   ))}
@@ -230,7 +230,7 @@ export const PropertyDetailPage: React.FC<PropertyDetailPageProps> = ({ onToggle
 
               {/* Blockchain Info */}
               {property.isNFT && (
-                <div className="mt-8 p-6 bg-gradient-to-r from-purple-50 to-pink-50 rounded-lg border border-purple-200">
+                <div className="mt-8 p-6 bg-linear-to-r from-purple-50 to-pink-50 rounded-lg border border-purple-200">
                   <div className="flex items-start space-x-3">
                     <Shield className="w-6 h-6 text-purple-600 mt-1" />
                     <div>
@@ -263,7 +263,7 @@ export const PropertyDetailPage: React.FC<PropertyDetailPageProps> = ({ onToggle
               <div className="space-y-4 mb-6">
                 <button
                   onClick={() => setShowContactForm(true)}
-                  className="w-full bg-gradient-to-r from-blue-600 to-emerald-500 hover:from-blue-700 hover:to-emerald-600 text-white py-3 px-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                  className="w-full bg-linear-to-r from-blue-600 to-emerald-500 hover:from-blue-700 hover:to-emerald-600 text-white py-3 px-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
                 >
                   Contact Agent
                 </button>
@@ -273,7 +273,7 @@ export const PropertyDetailPage: React.FC<PropertyDetailPageProps> = ({ onToggle
                 </button>
 
                 {property.isNFT && (
-                  <button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white py-3 px-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2">
+                  <button className="w-full bg-linear-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white py-3 px-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center space-x-2">
                     <Wallet className="w-4 h-4" />
                     <span>Purchase NFT</span>
                   </button>

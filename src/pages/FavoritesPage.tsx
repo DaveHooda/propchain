@@ -17,12 +17,12 @@ export const FavoritesPage: React.FC<FavoritesPageProps> = ({
   const favoriteProperties = mockProperties.filter(p => favorites.includes(p.id));
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-rose-50 via-pink-50/30 to-red-50/30 relative overflow-hidden">
+    <div className="min-h-screen bg-linear-to-br from-rose-50 via-pink-50/30 to-red-50/30 relative overflow-hidden">
       {/* Background Elements */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_40%,rgba(244,63,94,0.05),transparent_60%)]"></div>
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_60%,rgba(236,72,153,0.05),transparent_60%)]"></div>
-      <div className="absolute top-20 right-20 w-64 h-64 bg-gradient-to-bl from-rose-200/20 to-transparent rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-20 left-20 w-80 h-80 bg-gradient-to-tr from-pink-200/20 to-transparent rounded-full blur-3xl animate-pulse delay-1000"></div>
+      <div className="absolute top-20 right-20 w-64 h-64 bg-linear-to-bl from-rose-200/20 to-transparent rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-20 left-20 w-80 h-80 bg-linear-to-tr from-pink-200/20 to-transparent rounded-full blur-3xl animate-pulse delay-1000"></div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="mb-8 relative z-10">
